@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Auth App</title>
+    <link href="style.css" type="text/css" rel="stylesheet" /> 
+</head>
+<body>
+    <div id='container'>
+        <div id='loginContainer'>
+            <h1>Login</h1>
+            <form id='loginForm' action='/api' method='post'>
+                <label for="logUsername">Username</label>
+                <input type='text' placeholder="Username" name='logUsername' /><br />
+                <label for="logPassword">Password</label>
+                <input type='password' placeholder="Password" name='logPassword' /><br />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id='signupcontainer'>
+            <form id='signupForm' action='/api' method="POST" >
+                <h1>Sign Up</h1>
+                <label for="signUsername">Username</label>
+                <input type='text' placeholder="Username" name='signUsername' /><br />
+                <label for="signEmail">Email</label>
+                <input type='text' placeholder="Email" name='signEmail' /><br />
+                <label for="signPassword">Password</label>
+                <input type='password' placeholder="Password" name='signPassword' /><br />
+                <label for="confPassword">Password</label>
+                <input type='password' placeholder="Confirm Password" name='confPassword' /><br />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div id='root'></div>
+    <script src="/bundle.js"></script>
+</body>
+</html>
